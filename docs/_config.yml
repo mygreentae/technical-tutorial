@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Technical Tutorial
+title: The Guide to Creating a Chinese TTS Model
 domain: mygreentae.github.io
 baseurl: /technical-tutorial # the subpath of your site, e.g. /blog
 url: mygreentae.github.io # the base hostname & protocol for your site, e.g. http://example.com
