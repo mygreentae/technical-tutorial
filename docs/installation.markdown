@@ -10,12 +10,14 @@ permalink: /installation
 This is an installation guide for Unix-based systems. If you are on Windows, I would suggest to use a Docker Container. A guide to install and create a Docker container is in the [Docker Container Setup and Installation Section](#docker-container-setup-and-installation).
 
 This part of the tutorial will be going over the options and how you can install CoquiTTS on your machine or a Docker container.
+
 ## Local Installation
 To install CoquiTTS, all we need to do is to simply clone the CoquiTTS repository.
 ```
 $ git clone https://github.com/coqui-ai/TTS
 ```
 After running that command above to clone the TTS repository, we should see a folder called TTS. That is the folder we will be working in. More about it will be in the [training](training) section of this tutorial.
+
 ## Docker Container Setup and Installation
 
 {: .note }
