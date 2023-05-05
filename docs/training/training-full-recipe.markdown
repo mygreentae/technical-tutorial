@@ -5,6 +5,11 @@ nav_order: 2
 permalink: /training-full-recipe
 parent: Training a Model
 ---
+# Full Recipe
+
+{: .note }
+When training your model, depending on your dataset size and the specs of the machine you are training your model on training time might take a *very* long time. Using the [CSS10](https://github.com/Kyubyong/css10) dataset and these parameters, took over 80 hours of training to get intelligible speech.
+
 Here is the full training recipe as described in [recipe breakdown](training-breakdown)
 
 ```

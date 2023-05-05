@@ -11,6 +11,9 @@ This is an installation guide for Unix-based systems. If you are on Windows, I w
 
 This part of the tutorial will be going over the options and how you can install CoquiTTS on your machine or a Docker container.
 
+## Pre-requisites
+CoquiTTS requires an installation of **Python version >= 3.7, < 3.11**
+
 ## Local Installation
 To install CoquiTTS, all we need to do is to simply clone the CoquiTTS repository.
 ```

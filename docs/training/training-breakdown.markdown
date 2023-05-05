@@ -5,8 +5,8 @@ nav_order: 1
 permalink: /training-breakdown
 parent: Training a Model
 ---
-# How to train a basic TTS model using  VITS
-Finally! We are on to training our TTS model. This section will be an overview on how to train your TTS model using VITS. 
+# How to Train Your Chinese TTS model using  VITS
+This section will breakdown the recipe we will be using to train a Chinese TTS Model using VITS. If you would like to see the recipe in its full plese go to [this](training-full-recipe) page.
 
 ## Directory Structure
 Our current directory structure for our whole project should look like this
@@ -109,4 +109,11 @@ trainer = Trainer(
     eval_samples=eval_samples,
 )
 trainer.fit()
+```
+
+## Training your Chinese TTS Model
+To start training your model, you can run this command:
+
+```
+python3 ChineseTTSModel.py
 ```

@@ -44,7 +44,7 @@ As mentioned above, our audio files should be in the `.wav ` format. If they are
 sox <filename>.<file-format> <filename>.wav
 ```
 A sample bash script to convert all `.mp3` files in a certain folder to `.wav` files is shown below. You can edit this as you see fit to help with the conversion process
-```
+```bash
 #!/bin/bash
 for i in *.mp3
 do
