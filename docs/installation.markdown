@@ -10,7 +10,7 @@ permalink: /installation
 This is an installation guide meant for CoquiTTS release `v0.13.3`
 
 {: .note }
-This is an installation guide for Unix-based systems. If you are on Windows, I would suggest to use a Docker Container. A guide to install and create a Docker container is in the [Docker Container Setup and Installation Section](#docker-container-setup-and-installation).
+This is an installation guide for Unix-based systems. If you are on Windows, I would suggest to use a Docker container. A guide to install and create a Docker container is in the [Docker Container Setup and Installation Section](#docker-container-setup-and-installation).
 
 This part of the tutorial will be going over the options and how you can install CoquiTTS on your machine or a Docker container.
 
