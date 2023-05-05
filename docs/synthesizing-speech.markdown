@@ -30,6 +30,9 @@ Human Produced:
 </audio>
 
 Synthesized:
+<audio controls>
+  <source src="audio/1137_synth.wav" type="audio/wav">
+</audio>
 
 Text 2: 这一点后记也或作或辍地几乎做了两个月。天热如此，汗流浃背，是亦不可以已乎：
 Human Produced:
@@ -38,6 +41,9 @@ Human Produced:
 </audio>
 
 Synthesized:
+<audio controls>
+  <source src="audio/1154_synth.wav" type="audio/wav">
+</audio>
 
 Text 3: 于是说，这忘八蛋要提防，或者不如吩咐地保，不许他住在未庄。
 
@@ -47,6 +53,9 @@ Human Produced:
 </audio>
 
 Synthesized:
+<audio controls>
+  <source src="audio/1169_synth.wav" type="audio/wav">
+</audio>
 
 Text 4: 他生平所知道的革命党只有两个，城里的一个早已“嚓”的杀掉了，现在只剩了一个假洋鬼子。
 
@@ -56,4 +65,8 @@ Human Produced:
 </audio>
 
 Synthesized:
+<audio controls>
+  <source src="audio/1240_synth.wav" type="audio/wav">
+</audio>
+
 

@@ -14,9 +14,9 @@ There are basically two approaches that you may what to take: a subjective or an
 One of the most popular metric for a subjective evaluation is the MOS test (mean opinion score test). This score is obtained by having a group of people rate the quality of the audio samples produced by the model. This might not be feasible for a small project because of the requirement of humans to rate these samples. MOS scores might also bare the weight of bias due to expectations of the people rating the samples. However for a project on a small scale like this, you can easily tell the quality of the synthesized speech with either the background noise, or if the speech is intelligible.
 
 ### Mel Ceptral Distortion
-One of the most popular metric for an objective evaluation is the MCD test (mel ceptral distortion test). This test will compare two sequences of mel cepstra to  tell us the difference between them. There is a [MCD Python library](hhttps://pypi.org/project/pymcd/) where we can use our testing data to see how our model does compared to the audio sample recorded by a human.
+One of the most popular metric for an objective evaluation is the MCD test (mel ceptral distortion test). This test will compare two sequences of mel cepstra to tell us the difference between them. This test is usually measured in decibels (dB). MCD scores below 1 dB mean the two audio files are almost the same, and scores in the 1-2 dB range are considered acceptable. However, different MCD algorithms and techniques might give different scores. There is a [MCD Python library](hhttps://pypi.org/project/pymcd/) that we are going to use for our testing data to see how our model does compared to the audio sample recorded by a human.
 
-#### How to calculate MCD
+#### How to calculate MCD 
 To evaluate our model using the MCD test, we first want to install the library:
 
 ```
@@ -30,7 +30,7 @@ from pymcd.mcd import Calculate_MCD
 
 # instance of MCD class
 # three different modes "plain", "dtw" and "dtw_sl" for the above three MCD metrics
-mcd_toolbox = Calculate_MCD(MCD_mode="plain")
+mcd_toolbox = Calculate_MCD(MCD_mode="dtw_sl")
 
 # two inputs w.r.t. reference (ground-truth) and synthesized speeches, respectively
 mcd_value = mcd_toolbox.calculate_mcd("001.wav", "002.wav")
@@ -49,11 +49,12 @@ The audio and texts are on [this](synthesis) page!
 For the dataset we have been working with, here our results (for select audio files)! 
 
 ```
-Text 1:
-Text 2:
-Text 3:
-Text 4:
+Text 1: 10.533765737821863
+Text 2: 10.228107065561447
+Text 3: 6.57566237526798
+Text 4: 7.186993121002121
 ```
+As you can see from the scores we just calculated above, there might be too much noise in the background or the voice might not be clear enough. This might mean we need to train a bit longer or we might need to change some of our model parameters.
 
 ## Fine Tuning Your Model
 If you are looking to improve your model, you might find some of these tips useful! 

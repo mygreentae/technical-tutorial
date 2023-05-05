@@ -12,7 +12,7 @@ When training your model, depending on your dataset size and the specs of the ma
 
 Here is the full training recipe as described in [recipe breakdown](training-breakdown)
 
-```
+```python
 import os
 
 from trainer import Trainer, TrainerArgs

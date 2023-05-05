@@ -27,14 +27,14 @@ We will be putting copying that file to the `TTS` folder and renaming it to `Chi
 
 ### Loading Your Dataset
 First we will want to load our dataset. If you haven't formatted your data into the LJ Speech dataset format, please take a look at the [dataset prep](datasets/dataset-prep.markdown) section of the guide. 
-```
+```python
 dataset_config = BaseDatasetConfig(
     formatter="ljspeech", meta_file_train="metadata.txt", path=os.path.join(output_path, "../dataset/")
 )
 ```
 ### Audio Configuration
 We next want to load the audio. This will tell the model how it should be deschphering the audio.
-```
+```python
 audio_config = VitsAudioConfig(
     sample_rate=22050, win_length=1024, hop_length=256, num_mels=80, mel_fmin=0, mel_fmax=None
 )
@@ -48,7 +48,7 @@ This part of the recipe defines the parameters our Chinese TTS model will train 
 You can still use CoquiTTS on languages that aren't built into the toolkit! It will be a but harder to get results tho.
 
 The modified recipe to support Chinese is below:
-```
+```python
 config = VitsConfig(
     audio=audio_config,
     run_name="vits_ljspeech",
@@ -77,7 +77,7 @@ Parameters can be experimented with to fine-tune results.
 
 ### Initialization
 We need to initialize the audio processor which is used for feature extraction and for the audio input and output. 
-```
+```python
 ap = AudioProcessor.init_from_config(config)
 ```
 
@@ -87,7 +87,7 @@ tokenizer, config = TTSTokenizer.init_from_config(config)
 ```
 
 This loads the data samples. Each sample is a list of `[text, audio_file_path, speaker_name]`. This can be constomized.
-```
+```python
 train_samples, eval_samples = load_tts_samples(
     dataset_config,
     eval_split=True,
@@ -97,7 +97,7 @@ train_samples, eval_samples = load_tts_samples(
 ```
 
 Now, we initialize the model and the trainer!
-```
+```python
 model = Vits(config, ap, tokenizer, speaker_manager=None)
 
 trainer = Trainer(
