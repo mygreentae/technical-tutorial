@@ -73,7 +73,7 @@ config = VitsConfig(
     cudnn_benchmark=False,
 )
 ```
-Parameters can be experimented with to fine-tune results.
+Parameters can be experimented with to fine-tune results! You may also need to tweak batch sizes if your model keeps crashing. This might mean that your machine doesn't have enough memory.
 
 ### Initialization
 We need to initialize the audio processor which is used for feature extraction and for the audio input and output. 
