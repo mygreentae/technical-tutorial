@@ -4,7 +4,7 @@ title: About
 nav_order: 1
 permalink: /
 ---
-# CoquiTTS VITS Model in Marndarin Chinese
+# CoquiTTS VITS Model in Mandarin Chinese
 ## What does TTS mean?
 Text-to-speech (also known as TTS) synthesize speech from a given text input. The most notable TTS systems include Apple's Siri and Amazon's Alexa. 
 This tutorial will be a guide to creating our own Chinese TTS model using CoquiTTS's recipe and pre-trained VITS model.
